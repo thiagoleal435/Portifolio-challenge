@@ -1,0 +1,39 @@
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 1rem 0;
+}
+
+.cabecalho__titulo {
+    display: flex;
+}
+
+.cabecalho__titulo--nome {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--branco-titulo);
+    margin-left: .5rem;
+}
+
+.cabecalho__lista {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.cabecalho__item {
+    margin-right: 2rem;
+}
+
+.cabecalho__item:nth-last-child(1) {
+    margin-right: 0;
+}
+
+.cabecalho__link--contato {
+    color: #FFFFFF;
+}
+
+.cabecalho__link:hover {
+    color: var(--amarelo-escuro);
+}

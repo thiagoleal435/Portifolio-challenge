@@ -1,0 +1,37 @@
+:root {
+    --fundo: #0b054f;
+    --branco-titulo: #e6e6ef;
+    --branco-texto: #bcc2d1;
+    --cinza-escuro: #1c1d2d;
+    --amarelo-escuro: #e9fe03;
+    --amarelo-claro: #b7be2d;
+
+    --cor-link: #c6c6c6;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--fundo);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-link);
+}
+
+.tudo {
+    display: flex;
+    flex-direction: column;
+    max-width: 80vw;
+    margin: auto;
+}
+
+.container {
+    background-size: 100vw;
+}
+
+@media screen and (min-width:1024px) {}
