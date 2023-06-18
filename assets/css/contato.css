@@ -1,0 +1,36 @@
+.contato {
+    display: flex;
+    align-items: flex-start;
+    background-color: var(--fundo-amarelo);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.contato__imagem {
+    display: block;
+    background-image: url('../img/contato-imagem.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 35vw;
+    height: 45vw;
+    margin: auto;
+}
+
+.contato__dados {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+}
+
+.contato__titulo {
+    font-weight: 700;
+}
+
+.contato__descricao {
+    margin: 1rem 0;
+}
+
+.contato__formulario {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,7 +1,10 @@
 :root {
-    --fundo: #0b054f;
+    --fundo-azul: #0b054f;
+    --fundo-amarelo: #e3d97e;
     --branco-titulo: #e6e6ef;
     --branco-texto: #bcc2d1;
+    --azul-titulo: #0c13a4;
+    --azul-texto: #1118e0;
     --cinza-escuro: #1c1d2d;
     --amarelo-escuro: #e9fe03;
     --amarelo-claro: #b7be2d;
@@ -10,12 +13,9 @@
 }
 
 body {
-    box-sizing: border-box;
-    background-color: var(--fundo);
+    background-color: var(--fundo-azul);
     font-family: 'Raleway', sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1;
+    line-height: normal;
 }
 
 a {
@@ -23,15 +23,21 @@ a {
     color: var(--cor-link);
 }
 
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
 .tudo {
     display: flex;
     flex-direction: column;
-    max-width: 80vw;
-    margin: auto;
 }
 
 .container {
-    background-size: 100vw;
+    padding: 0 10%;
 }
 
 @media screen and (min-width:1024px) {}

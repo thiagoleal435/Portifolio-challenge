@@ -1,15 +1,28 @@
 .cabecalho {
     display: flex;
     justify-content: space-between;
-    box-sizing: border-box;
-    padding: 1rem 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .cabecalho__titulo {
     display: flex;
+    align-items: center;
 }
 
-.cabecalho__titulo--nome {
+.cabecalho__icone {
+    font-size: 1rem;
+    color: var(--amarelo-escuro);
+    transition: 1s;
+    transform: rotate(0) scale(1);
+}
+
+.cabecalho__icone:hover,
+.cabecalho__icone:focus {
+    transform: rotate(360deg) scale(1.5);
+}
+
+.cabecalho__nome {
     font-size: 1.5rem;
     font-weight: 500;
     color: var(--branco-titulo);
@@ -28,10 +41,6 @@
 
 .cabecalho__item:nth-last-child(1) {
     margin-right: 0;
-}
-
-.cabecalho__link--contato {
-    color: #FFFFFF;
 }
 
 .cabecalho__link:hover {

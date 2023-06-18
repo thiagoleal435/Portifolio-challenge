@@ -10,18 +10,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/cabecalho.css">
     <link rel="stylesheet" href="./assets/css/apresentacao.css">
+    <link rel="stylesheet" href="./assets/css/sobre.css">
+    <link rel="stylesheet" href="./assets/css/skills-e-hobbies.css">
+    <link rel="stylesheet" href="./assets/css/formacao.css">
+    <link rel="stylesheet" href="./assets/css/experiencia.css">
+    <link rel="stylesheet" href="./assets/css/contato.css">
+    <link rel="stylesheet" href="./assets/css/rodape.css">
 </head>
 
 <body>
     <div class="tudo">
         <section class="cabecalho container">
             <header class="cabecalho__titulo">
-                <img src="./assets/img/icone-cabecalho.png" alt="Icone do cabeçalho">
-                <h3 class="cabecalho__titulo--nome">Thiago.</h3>
+                <i class="fa-solid fa-sun cabecalho__icone"></i>
+                <h3 class="cabecalho__nome">Thiago.</h3>
             </header>
             <nav>
                 <ul class="cabecalho__lista">
@@ -31,7 +40,7 @@
                     <li class="cabecalho__item"><a class="cabecalho__link" href="#formacao">Formação</a></li>
                     <li class="cabecalho__item"><a class="cabecalho__link" href="#projetos">Projetos</a></li>
                     <li class="cabecalho__item"><a class="cabecalho__link cabecalho__link--contato"
-                            href="#contato">contato@thiago.com</a></li>
+                            href="#contato">lealthiago435@gmail.com</a></li>
                 </ul>
                 <!-- <li class="cabecalho__lista__item__contato"><a href="#contato"></a></li> -->
             </nav>
@@ -44,23 +53,184 @@
                 <p class="apresentacao__descricao__paragrafo">Eu sou formado em informática para internet e atualmente
                     estou participando do projeto Oracle ONE Next Education da Alura</p>
                 <ul class="apresentacao__descricao__lista">
-                    <li class="apresentacao__descricao__item"><a href="#"
-                            class="apresentacao__descricao__link">Github<img src="./assets/img/icone-redes.jpg"></a>
+                    <li class="apresentacao__descricao__item"><a href="#" class="apresentacao__descricao__link">Github
+                            <i class="fa-solid fa-arrow-right apresentacao__descricao__icone"></i></a>
+                    </li>
+                    <li class="apresentacao__descricao__item"><a href="#" class="apresentacao__descricao__link">Linkedin
+                            <i class="fa-solid fa-arrow-right apresentacao__descricao__icone"></i></a>
                     </li>
                     <li class="apresentacao__descricao__item"><a href="#"
-                            class="apresentacao__descricao__link">Linkedin<img src="./assets/img/icone-redes.jpg"></a>
+                            class="apresentacao__descricao__link">Instagram
+                            <i class="fa-solid fa-arrow-right apresentacao__descricao__icone"></i></a>
                     </li>
                     <li class="apresentacao__descricao__item"><a href="#"
-                            class="apresentacao__descricao__link">Instagram<img src="./assets/img/icone-redes.jpg"></a>
-                    </li>
-                    <li class="apresentacao__descricao__item"><a href="#"
-                            class="apresentacao__descricao__link">Curriculo<img src="./assets/img/icone-redes.jpg"></a>
+                            class="apresentacao__descricao__link">Curriculo
+                            <i class="fa-solid fa-arrow-right apresentacao__descricao__icone"></i></a>
                     </li>
                 </ul>
             </div>
             <img src="./assets/img/imagem-perfil.png" alt="Imagem de perfil" class="apresentacao__perfil">
         </section>
-    </div>
+
+        <section class="sobre container">
+            <h2 class="sobre__titulo">Sobre mim</h2>
+            <p class="sobre__descricao">Cursei técnico em informática para internet pelo IFPE Campus Belo Jardim, e
+                desde então sigo focado em melhorar e evoluir meus conhecimentos com programação e
+                desenvolvimento de softwares.<br>
+                <br>Tenho como um objetivo pessoal e profissional atuar como Desenvolver Front-Rnd Junior, pondo em
+                prática tudo que sei sobre Front-End e tecnologia em geral, não esquecendo de priorizar uma boa
+                comunicação com quaisquer colegas de equipe para que o trabalho seja feito com execência e
+                eficácia.
+            </p>
+        </section>
+
+        <section class="skills-e-hobbies container">
+            <div class="skills">
+                <h2 class="skills__titulo">Skills</h2>
+                <ul class="skills__lista">
+                    <li class="skills__item">
+                        <i class="fa-brands fa-html5 skills__icone"></i>
+                        <h3 class="skills__nome">Html 5</h3>
+                    </li>
+                    <li class="skills__item">
+                        <i class="fa-brands fa-css3-alt skills__icone"></i>
+                        <h3 class="skills__nome">CSS</h3>
+                    </li>
+                    <li class="skills__item">
+                        <i class="fa-brands fa-square-js skills__icone"></i>
+                        <h3 class="skills__nome">Javascript</h3>
+                    </li>
+                    <li class="skills__item">
+                        <i class="fa-brands fa-git-alt skills__icone"></i>
+                        <h3 class="skills__nome">Git</h3>
+                    </li>
+                    <li class="skills__item">
+                        <i class="fa-brands fa-github skills__icone"></i>
+                        <h3 class="skills__nome">GitHub</h3>
+                    </li>
+                    <li class="skills__item">
+                        <i class="fa-brands fa-linux skills__icone"></i>
+                        <h3 class="skills__nome">Linux</h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="hobbies">
+                <h2 class="hobbies__titulo">Hobbies</h2>
+                <ul class="hobbies__lista">
+                    <li class="hobbies__item">
+                        <i class="fa-solid fa-headphones skills__icone"></i>
+                        <h3 class="hobbies__nome">Ouvir música</h3>
+                    </li>
+                    <li class="hobbies__item">
+                        <i class="fa-solid fa-guitar skills__icone"></i>
+                        <h3 class="hobbies__nome">Tocar violão</h3>
+                    </li>
+                    <li class="hobbies__item">
+                        <i class="fa-solid fa-film skills__icone"></i>
+                        <h3 class="hobbies__nome">Assitir filmes</h3>
+                    </li>
+                    <li class="hobbies__item">
+                        <i class="fa-solid fa-basketball skills__icone"></i>
+                        <h3 class="hobbies__nome">Basquete</h3>
+                    </li>
+                    <li class="hobbies__item">
+                        <i class="fa-solid fa-camera skills__icone"></i>
+                        <h3 class="hobbies__nome">Tirar fotos</h3>
+                    </li>
+                    <li class="hobbies__item">
+                        <i class="fa-solid fa-motorcycle skills__icone"></i>
+                        <h3 class="hobbies__nome">Andar de moto</h3>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="formacao container">
+            <h2 class="formacao__titulo">Formação acadêmica</h2>
+            <ul class="formacao__lista">
+                <li class="formacao__item">
+                    <div class="formacao__imagem__container">
+                        <img src="./assets/img/formacao-eremjam.png" alt="Logo Eremjam" class="formacao__imagem">
+                    </div>
+                    <h3 class="formacao__descricao">Ensino médio</h3>
+                    <p class="formacao__tempo">2018 - EREM José de Almeida Maciel</p>
+                </li>
+                <li class="formacao__item">
+                    <div class="formacao__imagem__container">
+                        <img src="./assets/img/formacao-ifpe.png" alt="Logo IFPE" class="formacao__imagem">
+                    </div>
+                    <h3 class="formacao__descricao">Técnico em informática para internet</h3>
+                    <p class="formacao__tempo">2022 - IFPE Campus Belo Jardim</p>
+                </li>
+                <li class="formacao__item">
+                    <div class="formacao__imagem__container">
+                        <img src="./assets/img/formacao-one.png" alt="Logo One Next Education" class="formacao__imagem">
+                    </div>
+                    <h3 class="formacao__descricao">Oracle ONE Next Education</h3>
+                    <p class="formacao__tempo">Em andamento - Alura + Oracle</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="experiencia container">
+            <h2 class="experiencia__titulo">Experiência com programação</h2>
+            <div class="experiencia__container">
+                <img src="" alt="" class="experiencia__imagem">
+                <h3 class="experiencia__nome"></h3>
+                <p class="experiencia__descricao"></p>
+                <botton class="experiencia__botao"></botton>
+                <botton class="experiencia__botao"></botton>
+            </div>
+            <div class="experiencia__container">
+                <img src="" alt="" class="experiencia__imagem">
+                <h3 class="experiencia__nome"></h3>
+                <p class="experiencia__descricao"></p>
+                <botton class="experiencia__botao"></botton>
+                <botton class="experiencia__botao"></botton>
+            </div>
+            <div class="experiencia__container">
+                <img src="" alt="" class="experiencia__imagem">
+                <h3 class="experiencia__nome"></h3>
+                <p class="experiencia__descricao"></p>
+                <botton class="experiencia__botao"></botton>
+                <botton class="experiencia__botao"></botton>
+            </div>
+            <div class="experiencia__container">
+                <img src="" alt="" class="experiencia__imagem">
+                <h3 class="experiencia__nome"></h3>
+                <p class="experiencia__descricao"></p>
+                <botton class="experiencia__botao"></botton>
+                <botton class="experiencia__botao"></botton>
+            </div>
+        </section>
+
+        <section class="contato container">
+            <div class="contato__imagem"></div>
+            <div class="contato__dados">
+                <h2 class="contato__titulo">Contato</h2>
+                <p class="contato__descricao">Preencha o formulário abaixo e entrarei em contato o mais breve
+                    possível
+                </p>
+                <form action="" class="contato__formulario">
+                    <label class="contato__label" for="nome">Nome<input class="contato__input" type="text" name="nome"
+                            placeholder="Digite seu nome" required>
+                    </label>
+
+                    <label class="contato__label" for="email">E-mail<input class="contato__input" type="email"
+                            name="email" placeholder="Digite seu email" required>
+                    </label>
+
+                    <label class="contato__label" for="assunto">Assunto<input class="contato__input" type="text"
+                            name="assunto" placeholder="Digite o assunto" required>
+                    </label>
+
+                    <label class="contato__label" for="mensagem">Mensagem<input class="contato__input" type="text"
+                            name="mensagem" placeholder="Digite sua mensagem" required>
+                    </label>
+                    <button class="botao">Enviar mensagem</button>
+                </form>
+            </div>
+        </section>
 </body>
 
 </html>

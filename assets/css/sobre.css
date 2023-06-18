@@ -1,0 +1,20 @@
+.sobre {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--fundo-amarelo);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.sobre__titulo {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--azul-titulo);
+    padding-bottom: 3rem;
+}
+
+.sobre__descricao {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--azul-texto);
+}
