@@ -1,7 +1,7 @@
 :root {
     --fundo-azul: #0b054f;
     --fundo-amarelo: #e3d97e;
-    --branco-titulo: #e6e6ef;
+    --branco-titulo: #ffffff;
     --branco-texto: #bcc2d1;
     --azul-titulo: #0c13a4;
     --azul-texto: #1118e0;
@@ -31,6 +31,10 @@ h2 {
     font-size: 2.5rem;
 }
 
+::placeholder {
+    font-family: 'Raleway', sans-serif;
+}
+
 .tudo {
     display: flex;
     flex-direction: column;
@@ -38,6 +42,20 @@ h2 {
 
 .container {
     padding: 0 10%;
+}
+
+.botao {
+    font-size: 1.2rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    color: var(--branco-titulo);
+    transition: padding 0.5s;
+}
+
+.botao:hover {
+    cursor: pointer;
+    padding: 1.2rem;
 }
 
 @media screen and (min-width:1024px) {}

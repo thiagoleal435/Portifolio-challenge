@@ -207,28 +207,32 @@
         <section class="contato container">
             <div class="contato__imagem"></div>
             <div class="contato__dados">
-                <h2 class="contato__titulo">Contato</h2>
-                <p class="contato__descricao">Preencha o formulário abaixo e entrarei em contato o mais breve
-                    possível
-                </p>
-                <form action="" class="contato__formulario">
-                    <label class="contato__label" for="nome">Nome<input class="contato__input" type="text" name="nome"
-                            placeholder="Digite seu nome" required>
-                    </label>
-
-                    <label class="contato__label" for="email">E-mail<input class="contato__input" type="email"
-                            name="email" placeholder="Digite seu email" required>
-                    </label>
-
-                    <label class="contato__label" for="assunto">Assunto<input class="contato__input" type="text"
-                            name="assunto" placeholder="Digite o assunto" required>
-                    </label>
-
-                    <label class="contato__label" for="mensagem">Mensagem<input class="contato__input" type="text"
-                            name="mensagem" placeholder="Digite sua mensagem" required>
-                    </label>
-                    <button class="botao">Enviar mensagem</button>
-                </form>
+                <div>
+                    <h2 class="contato__titulo">Contato</h2>
+                    <p class="contato__descricao">Preencha o formulário abaixo e entrarei em contato o mais breve
+                        possível
+                    </p>
+                    <form action="" class="contato__formulario">
+                        <div class="contato__formulario__campo">
+                            <input class="contato__input" type="text" name="nome" required>
+                            <label for="nome" class="contato__label">Nome</label>
+                        </div>
+                        <div class="contato__formulario__campo">
+                            <input class="contato__input" type="email" nome="email" required>
+                            <label for="email" class="contato__label">Email</label>
+                        </div>
+                        <div class="contato__formulario__campo">
+                            <input class="contato__input" type="text" nome="assunto" required>
+                            <label for="assunto" class="contato__label">Assunto</label>
+                        </div>
+                        <div class="contato__formulario__campo contato__formulario__campo--textarea">
+                            <textarea class="contato__input contato__input--textarea" type="text" name="mensagem"
+                                required></textarea>
+                            <label for="mensagem" class="contato__label">Mensagem</label>
+                        </div>
+                    </form>
+                </div>
+                <button class="contato__botao botao">Enviar mensagem</button>
             </div>
         </section>
 </body>

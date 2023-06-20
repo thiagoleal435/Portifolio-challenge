@@ -43,6 +43,10 @@
     margin-right: 0;
 }
 
+.cabecalho__link--contato {
+    color: var(--branco-titulo);
+}
+
 .cabecalho__link:hover {
     color: var(--amarelo-escuro);
 }
