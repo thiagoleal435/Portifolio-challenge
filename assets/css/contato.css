@@ -82,7 +82,7 @@
 .contato__input:valid+.contato__label,
 .contato__input:focus-within+.contato__label {
     top: 2%;
-    left: 1%;
+    left: .5%;
     font-size: .8rem;
     color: var(--azul-texto);
 }

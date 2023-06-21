@@ -45,8 +45,10 @@ h2 {
 }
 
 .botao {
+    display: flex;
     font-size: 1.2rem;
     padding: 1rem;
+    box-sizing: border-box;
     border: none;
     border-radius: 5px;
     color: var(--branco-titulo);

@@ -33,7 +33,7 @@
 
 .apresentacao__descricao__link {
     display: flex;
-    transition: 0.5s;
+    transition: color .5s, transform .5s;
     transform: translateX(0) scale(1);
 }
 
@@ -54,13 +54,12 @@
     border-radius: 100%;
     box-shadow: 0 0 10px 2px #e5d863;
     opacity: 0.8;
-    transition: 1s;
+    transition: opacity 0.5s, box-shadow 0.5s, transform 1s;
     transform: translateX(0) scale(1);
 }
 
-.apresentacao__perfil:hover,
-.apresentacao__perfil:focus {
+.apresentacao__perfil:hover {
     box-shadow: 0 0 20px 5px #e5d863;
     opacity: 1;
-    transform: translateX(10px) scale(1.2);
+    transform: translateX(10px) scale(1.1);
 }
