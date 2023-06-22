@@ -6,10 +6,7 @@
 }
 
 .formacao__titulo {
-    font-size: 2.5rem;
-    font-weight: 700;
     color: var(--azul-titulo);
-    text-align: center;
     margin: 2rem;
 }
 
@@ -22,13 +19,13 @@
     display: flex;
     flex-direction: column;
     align-items: space-between;
-    width: 23em;
-    height: 23em;
+    width: 23vw;
+    height: 23vw;
 }
 
 .formacao__imagem__container {
     display: flex;
-    height: 21em;
+    height: 21vw;
     background-color: white;
 }
 
@@ -50,4 +47,40 @@
     font-size: .8rem;
     font-weight: 400;
     color: var(--azul-texto);
+}
+
+/* Tablet */
+
+@media screen and (max-width:1024px) {
+
+    .formacao__item {
+        width: 28vw;
+    }
+}
+
+/* Smartphone */
+
+@media screen and (max-width:768px) {
+
+    .formacao {
+        padding-bottom: 0;
+    }
+
+    .formacao__lista {
+        flex-direction: column;
+    }
+
+    .formacao__item {
+        width: 90%;
+        margin: auto;
+        height: 60vw;
+    }
+
+    .formacao__imagem__container {
+        height: 40vw;
+    }
+
+    .formacao__imagem {
+        height: 100%;
+    }
 }

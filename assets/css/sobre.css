@@ -7,14 +7,22 @@
 }
 
 .sobre__titulo {
-    font-size: 3rem;
-    font-weight: 700;
+    padding-bottom: 2rem;
+    text-align: start;
     color: var(--azul-titulo);
-    padding-bottom: 3rem;
 }
 
 .sobre__descricao {
     font-size: 1rem;
     font-weight: 400;
     color: var(--azul-texto);
+}
+
+/* Smartphone */
+
+@media screen and (max-width:768px) {
+    .sobre {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
 }

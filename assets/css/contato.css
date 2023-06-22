@@ -22,30 +22,34 @@
 }
 
 .contato__titulo {
-    display: flex;
-    font-weight: 700;
+    text-align: start;
+    margin-bottom: 1rem;
+}
+
+.contato__descricao--infoadd {
+    display: none;
 }
 
 .contato__descricao {
     display: flex;
-    margin: 1rem 0;
 }
 
 .contato__formulario {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 1rem 0;
 }
 
 .contato__formulario__campo {
     position: relative;
     margin: 2.5% 0;
     border-radius: 3px;
-    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.3);
 }
 
 .contato__formulario__campo--textarea {
-    height: 17.5vh;
+    height: 8vw;
 }
 
 .contato__input {
@@ -59,16 +63,21 @@
 
 .contato__input--textarea {
     resize: none;
-    height: 66.5%;
+    height: 5.15vw;
 }
 
 .contato__label {
     font-size: 1rem;
+    color: var(--cinza-escuro);
     position: absolute;
     top: 30%;
     left: 2%;
     pointer-events: none;
     transition: 0.2s ease all;
+}
+
+.contato__label--textarea {
+    top: 15%
 }
 
 .contato__input:hover,
@@ -90,4 +99,60 @@
 .contato__botao {
     align-self: flex-start;
     background-color: var(--fundo-azul);
+}
+
+/* Tablet */
+
+@media screen and (max-width:1024px) {
+    .contato__imagem {
+        display: none;
+    }
+
+    .contato__descricao--infoadd {
+        display: flex;
+    }
+
+    .contato__dados {
+        width: 100%;
+        padding: 0;
+    }
+
+    .contato__input {
+        padding: 3% 2.5%;
+    }
+
+    .contato__formulario__campo--textarea {
+        height: 15vw;
+    }
+
+    .contato__input--textarea {
+        height: 9.55vw;
+    }
+}
+
+/* Smartphone */
+
+@media screen and (max-width:768px) {
+
+    .contato {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .contato__dados {
+        width: 90%;
+        margin: auto;
+    }
+
+    .contato__input {
+        padding: 6% 2.5%;
+    }
+
+    .contato__formulario__campo--textarea {
+        height: 40vw;
+    }
+
+    .contato__input--textarea {
+        height: 30vw;
+    }
 }

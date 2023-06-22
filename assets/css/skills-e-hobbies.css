@@ -13,7 +13,6 @@
 
 .skills__titulo,
 .hobbies__titulo {
-    font-size: 2.5rem;
     font: 700;
     color: var(--branco-titulo);
     text-align: center;
@@ -21,7 +20,7 @@
 
 .skills__lista,
 .hobbies__lista {
-    margin: 3rem 0;
+    padding: 1.5rem 0 3rem 0;
     display: flex;
     justify-content: space-between;
 }
@@ -34,8 +33,9 @@
     width: 11vw;
     height: 11vw;
     padding: 10px;
+    margin: 1rem 0;
     justify-content: end;
-    border-radius: 1rem;
+    border-radius: 5px;
 }
 
 .skills__icone,
@@ -50,4 +50,37 @@
     font-size: 1rem;
     font-weight: 1000;
     color: var(--branco-titulo);
+}
+
+/* Tablet */
+
+@media screen and (max-width:1024px) {
+
+    .skills__lista,
+    .hobbies__lista {
+        flex-wrap: wrap;
+        padding: 1.5rem 0;
+    }
+
+    .skills__item,
+    .hobbies__item {
+        height: 13vw;
+        width: 26vw;
+    }
+}
+
+/* Smartphone */
+
+@media screen and (max-width:768px) {
+
+    .skills-e-hobbies {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .skills__item,
+    .hobbies__item {
+        height: 25vw;
+        width: 37vw;
+    }
 }
