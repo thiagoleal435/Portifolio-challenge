@@ -15,9 +15,8 @@
 }
 
 .contato__dados {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    position: relative;
+    display: inline-block;
     padding-left: 2.5%;
 }
 
@@ -30,15 +29,11 @@
     display: none;
 }
 
-.contato__descricao {
-    display: flex;
-}
-
 .contato__formulario {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 1rem 0;
+    margin-top: 1rem;
 }
 
 .contato__formulario__campo {
@@ -50,6 +45,7 @@
 
 .contato__formulario__campo--textarea {
     height: 8vw;
+    margin-bottom: 5rem;
 }
 
 .contato__input {
@@ -80,6 +76,14 @@
     top: 15%
 }
 
+.contato__erro {
+    color: red;
+}
+
+.contato__modal {
+    display: none;
+}
+
 .contato__input:hover,
 .contato__input:valid,
 .contato__input:focus {
@@ -97,6 +101,8 @@
 }
 
 .contato__botao {
+    position: absolute;
+    bottom: 0;
     align-self: flex-start;
     background-color: var(--fundo-azul);
 }

@@ -20,6 +20,7 @@
 
 .skills__lista,
 .hobbies__lista {
+    width: 100%;
     padding: 1.5rem 0 3rem 0;
     display: flex;
     justify-content: space-between;
@@ -27,28 +28,30 @@
 
 .skills__item,
 .hobbies__item {
-    display: flex;
-    flex-direction: column;
+    position: relative;
     background-color: var(--azul-texto);
-    width: 11vw;
-    height: 11vw;
-    padding: 10px;
+    width: 15%;
+    padding: 7.5% 0;
     margin: 1rem 0;
     justify-content: end;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 .skills__icone,
 .hobbies__icone {
-    font-size: 32px;
+    position: absolute;
+    left: 7.5%;
+    bottom: 25%;
+    font-size: 2rem;
     color: var(--amarelo-escuro);
 }
 
 .skills__nome,
 .hobbies__nome {
-    margin-top: .5rem;
-    font-size: 1rem;
-    font-weight: 1000;
+    position: absolute;
+    left: 7.5%;
+    bottom: 7.5%;
+    font-weight: 700;
     color: var(--branco-titulo);
 }
 
@@ -64,9 +67,14 @@
 
     .skills__item,
     .hobbies__item {
-        height: 13vw;
-        width: 26vw;
+        width: 30%;
     }
+
+    .skills__icone,
+    .hobbies__icone {
+        bottom: 30%;
+    }
+
 }
 
 /* Smartphone */
@@ -80,7 +88,12 @@
 
     .skills__item,
     .hobbies__item {
-        height: 25vw;
-        width: 37vw;
+        width: 47.5%;
+        padding: 15% 0;
+    }
+
+    .skills__icone,
+    .hobbies__icone {
+        bottom: 30%;
     }
 }

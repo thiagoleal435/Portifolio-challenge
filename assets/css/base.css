@@ -65,6 +65,7 @@ nav {
     font-size: 1.2rem;
     padding: 1rem;
     box-sizing: border-box;
+    outline: none;
     border: none;
     border-radius: 2px;
     color: var(--branco-titulo);
