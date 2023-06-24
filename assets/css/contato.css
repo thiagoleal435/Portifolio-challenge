@@ -37,7 +37,7 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    margin: 2.5% 0;
+    margin: 1.5% 0;
     border-radius: 2px;
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.3);
 }
@@ -45,7 +45,6 @@
 .contato__formulario__campo--textarea {
     display: flex;
     height: 8rem;
-    margin-bottom: 5rem;
 }
 
 .contato__input {
@@ -116,7 +115,8 @@
 
     .contato__dados {
         width: 100%;
-        padding: 0;
+        padding-left: 0;
+        padding-bottom: 10%;
     }
 
     .contato__input {
@@ -135,6 +135,7 @@
     .contato__dados {
         width: 90%;
         margin: auto;
+        padding: 0 0 15% 0;
     }
 
     .contato__input {
@@ -143,9 +144,5 @@
 
     .contato__formulario__campo {
         margin: 5% 0;
-    }
-
-    .contato__formulario__campo--textarea {
-        margin-bottom: 20%;
     }
 }

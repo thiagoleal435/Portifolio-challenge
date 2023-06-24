@@ -35,6 +35,11 @@ function validaMensagem() {
     }
 }
 
+function verDemoBjota() {
+    alert("A demo deste projeto não está disponível no Github Pages. O GitHub Pages não oferece suporte a linguagens do lado do servidor, como PHP(Linguagem utilizada neste projeto)")
+}
+
+
 let inputNome = document.getElementById("nome");
 let inputEmail = document.getElementById("email");
 let inputAssunto = document.getElementById("assunto");

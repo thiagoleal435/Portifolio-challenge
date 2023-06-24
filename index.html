@@ -205,7 +205,7 @@
                         <a href="https://github.com/thiagoleal435/Bjota_Estacionamento"
                             class="experiencia__botao botao">Repositório
                         </a>
-                        <a href="#" class="experiencia__botao botao">
+                        <a onclick="verDemoBjota()" href="#experiencia" class="experiencia__botao botao" id="demoBjota">
                             Ver demo
                         </a>
                     </div>
@@ -250,24 +250,24 @@
                     <div class="contato__formulario__campo">
                         <input class="contato__input" id="nome" type="text" name="nome" maxlength="50" required>
                         <label for="nome" class="contato__label">Nome</label>
-                        <span id="erroNome" class="contato__erro"></span>
                     </div>
+                    <span id="erroNome" class="contato__erro"></span>
                     <div class="contato__formulario__campo">
-                        <input class="contato__input" id="email" type="email" nome="email" required>
+                        <input class="contato__input" id="email" type="email" nome="email" min="5" required>
                         <label for="email" class="contato__label">Email</label>
-                        <span id="erroEmail" class="contato__erro"></span>
                     </div>
+                    <span id="erroEmail" class="contato__erro"></span>
                     <div class="contato__formulario__campo">
                         <input class="contato__input" id="assunto" type="text" nome="assunto" maxlength="50" required>
                         <label for="assunto" class="contato__label">Assunto</label>
-                        <span id="erroAssunto" class="contato__erro"></span>
                     </div>
+                    <span id="erroAssunto" class="contato__erro"></span>
                     <div class="contato__formulario__campo contato__formulario__campo--textarea">
                         <textarea class="contato__input contato__input--textarea" id="textarea" type="text"
                             name="mensagem" maxlength="300" required></textarea>
                         <label for="mensagem" class="contato__label contato__label--textarea">Mensagem</label>
-                        <span id="erroMensagem" class="contato__erro"></span>
                     </div>
+                    <span id="erroMensagem" class="contato__erro"></span>
                     <input type="submit" class="contato__botao botao" id="submit" value="Enviar Mensagem">
                 </form>
             </div>
