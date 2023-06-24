@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 .skills,
@@ -13,87 +13,82 @@
 
 .skills__titulo,
 .hobbies__titulo {
-    font: 700;
     color: var(--branco-titulo);
-    text-align: center;
 }
 
 .skills__lista,
 .hobbies__lista {
-    width: 100%;
-    padding: 1.5rem 0 3rem 0;
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    margin: 2% 0 5% 0;
 }
 
 .skills__item,
 .hobbies__item {
-    position: relative;
-    background-color: var(--azul-texto);
+    display: flex;
+    flex-direction: column;
     width: 15%;
-    padding: 7.5% 0;
-    margin: 1rem 0;
-    justify-content: end;
+    background-color: var(--azul-texto);
     border-radius: 2px;
 }
 
 .skills__icone,
 .hobbies__icone {
-    position: absolute;
-    left: 7.5%;
-    bottom: 25%;
+    padding: 60% 0 0 7%;
     font-size: 2rem;
     color: var(--amarelo-escuro);
 }
 
 .skills__nome,
 .hobbies__nome {
-    position: absolute;
-    left: 7.5%;
-    bottom: 7.5%;
+    padding: 5% 0 7% 7%;
     font-weight: 700;
     color: var(--branco-titulo);
 }
 
 /* Tablet */
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1023px) {
 
     .skills__lista,
     .hobbies__lista {
         flex-wrap: wrap;
-        padding: 1.5rem 0;
+        padding: 3% 0;
     }
 
     .skills__item,
     .hobbies__item {
-        width: 30%;
+        width: 31%;
+        margin-bottom: 5%;
     }
 
     .skills__icone,
     .hobbies__icone {
-        bottom: 30%;
+        padding-top: 25%;
     }
 
 }
 
 /* Smartphone */
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
 
     .skills-e-hobbies {
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
+        padding: 5% 5%;
+    }
+
+    .skills__lista {
+        margin-top: 5%;
+        margin-bottom: 0;
+    }
+
+    .hobbies__lista {
+        margin-top: 5%;
     }
 
     .skills__item,
     .hobbies__item {
         width: 47.5%;
-        padding: 15% 0;
-    }
-
-    .skills__icone,
-    .hobbies__icone {
-        bottom: 30%;
     }
 }

@@ -2,21 +2,18 @@
     display: flex;
     justify-content: space-between;
     background-color: var(--fundo-amarelo);
-    padding-top: 3rem;
-    padding-bottom: 3rem;
 }
 
 .contato__imagem {
+    height: 40rem;
+    width: 40rem;
     background-image: url('../img/contato-imagem.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 40rem;
-    width: 40rem;
 }
 
 .contato__dados {
     position: relative;
-    display: inline-block;
     padding-left: 2.5%;
 }
 
@@ -38,32 +35,35 @@
 
 .contato__formulario__campo {
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
     margin: 2.5% 0;
-    border-radius: 3px;
+    border-radius: 2px;
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.3);
 }
 
 .contato__formulario__campo--textarea {
-    height: 8vw;
+    display: flex;
+    height: 8rem;
     margin-bottom: 5rem;
 }
 
 .contato__input {
-    width: 95%;
+    display: flex;
+    width: 100%;
     padding: 4% 2.5%;
     font-size: 1rem;
     font-family: 'Raleway', sans-serif;
     border: none;
-    border-radius: 3px;
+    border-radius: 2px;
 }
 
 .contato__input--textarea {
     resize: none;
-    height: 5.15vw;
+    box-sizing: border-box;
 }
 
 .contato__label {
-    font-size: 1rem;
     color: var(--cinza-escuro);
     position: absolute;
     top: 30%;
@@ -78,10 +78,6 @@
 
 .contato__erro {
     color: red;
-}
-
-.contato__modal {
-    display: none;
 }
 
 .contato__input:hover,
@@ -126,14 +122,6 @@
     .contato__input {
         padding: 3% 2.5%;
     }
-
-    .contato__formulario__campo--textarea {
-        height: 15vw;
-    }
-
-    .contato__input--textarea {
-        height: 9.55vw;
-    }
 }
 
 /* Smartphone */
@@ -141,8 +129,7 @@
 @media screen and (max-width:768px) {
 
     .contato {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding: 10% 5%;
     }
 
     .contato__dados {
@@ -154,11 +141,11 @@
         padding: 6% 2.5%;
     }
 
-    .contato__formulario__campo--textarea {
-        height: 40vw;
+    .contato__formulario__campo {
+        margin: 5% 0;
     }
 
-    .contato__input--textarea {
-        height: 30vw;
+    .contato__formulario__campo--textarea {
+        margin-bottom: 20%;
     }
 }

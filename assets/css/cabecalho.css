@@ -28,7 +28,6 @@
 
 .cabecalho__lista {
     display: flex;
-    height: 100%;
     align-items: center;
 }
 
@@ -37,12 +36,13 @@
 }
 
 .cabecalho__item:last-child {
-    font-weight: 700;
     margin-right: 0;
 }
 
-.cabecalho__link--contato {
+.cabecalho__link--contato,
+.cabecalho__item__contato {
     color: var(--branco-titulo);
+    font-weight: 700;
 }
 
 .cabecalho__link:hover {
@@ -63,16 +63,13 @@
     .cabecalho__item__contato {
         display: flex;
         align-self: center;
-        font-weight: 700;
-        color: var(--branco-titulo);
     }
 }
 
 /* Smartphone */
 
 @media screen and (max-width:768px) {
-
-    .cabecalho__item__contato {
+    .cabecalho__link--contato {
         font-weight: 400;
         color: var(--branco-texto);
     }

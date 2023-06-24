@@ -1,7 +1,5 @@
 .apresentacao {
     display: flex;
-    padding-top: 6rem;
-    padding-bottom: 6rem;
 }
 
 .apresentacao__descricao {
@@ -9,7 +7,7 @@
     flex-direction: column;
     align-items: start;
     justify-content: space-around;
-    padding-right: 2%;
+    padding: 5% 2% 5% 0;
 }
 
 .apresentacao__descricao__titulo {
@@ -24,16 +22,17 @@
 }
 
 .apresentacao__descricao__lista {
+    width: 100%;
     display: flex;
 }
 
 .apresentacao__descricao__item {
-    padding-right: 10%;
+    padding-right: 5%;
 }
 
 .apresentacao__descricao__link {
     display: flex;
-    transition: color .5s, transform .5s;
+    transition: 0.5s;
     transform: translateX(0) scale(1);
 }
 
@@ -49,8 +48,9 @@
 }
 
 .apresentacao__perfil {
-    width: 25vw;
-    height: 25vw;
+    width: 30%;
+    height: 30%;
+    margin: auto;
     border-radius: 100%;
     box-shadow: 0 0 10px 2px #e5d863;
     opacity: 0.8;
@@ -66,19 +66,24 @@
 
 /* Tablet */
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1023px) {
 
     .apresentacao {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
+        padding-top: 7%;
+        padding-bottom: 7%;
     }
 
     .apresentacao__descricao {
-        width: 70%;
+        padding: 0 2% 0 0;
     }
 
     .apresentacao__descricao__paragrafo {
         font-size: 1rem;
+    }
+
+    .apresentacao__perfil {
+        width: 25%;
+        height: 25%;
     }
 
     .apresentacao__descricao__link {
@@ -89,7 +94,7 @@
 
 /* Smartphone */
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
 
     .apresentacao {
         flex-direction: column-reverse;
@@ -97,18 +102,14 @@
     }
 
     .apresentacao__perfil {
-        margin: 1rem 0;
-        height: 30vw;
-        width: 30vw;
+        margin: 5% 0;
     }
 
     .apresentacao__descricao {
-        width: 100%;
         padding: 0;
     }
 
     .apresentacao__descricao__lista {
-        width: 100%;
         justify-content: space-between;
     }
 
